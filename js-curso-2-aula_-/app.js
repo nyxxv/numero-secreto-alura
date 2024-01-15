@@ -1,5 +1,5 @@
 let listaNumeros = []; 
-let numeroLimite = 10;
+let numeroLimite = 100;
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -74,6 +74,6 @@ function reiniciarJogo(){
     limparCampo();
     tentativas = 1;
     exibirMensagemInicial();
-    document.getElementById("reiniciar").setAttribute("disabled", true); 
+    
     // Esse setAttribute modifica o atributo; como tinha sido disabilitado quando ganhava, quando reiniciar, ele volta a ficar desabilitado.
 }
